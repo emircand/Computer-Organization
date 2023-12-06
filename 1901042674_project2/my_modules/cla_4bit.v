@@ -7,7 +7,6 @@ module cla_4bit(
 wire [3:0] c;
 
 //Instantiate the carry lookahead logic
-
 cll_4bit cll(
   .g(g),
   .p(p),

@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/simulation/modelsim
 vadder
-Z1 !s110 1701883725
+Z1 !s110 1701893138
 !i10b 1
 !s100 0O[JOJ2Jhgo<69d:@_]N20
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,32 +20,104 @@ R0
 w1701881434
 8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/adder.v
 FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/adder.v
-!i122 6
+!i122 17
 L0 1 17
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1701883725.000000
+Z5 !s108 1701893138.000000
 !s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/adder.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/adder.v|
 !i113 1
 Z6 o-vlog01compat -work work
 Z7 !s92 -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules
 Z8 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 kEMZB^D:LYemR6R;Va9:Y0
+R2
+ImXVk9gS0ID=7aSflB77TZ1
+R3
+R0
+w1701892103
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v
+!i122 16
+L0 1 104
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v|
+!i113 1
+R6
+R7
+R8
+valu_tb
+!s110 1701893139
+!i10b 1
+!s100 J5gRa^Bh]0SO[IdC[^Q1O2
+R2
+I]]D2g2eZQzl]FfC^n5]Oo2
+R3
+R0
+w1701893117
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu_tb.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu_tb.v
+!i122 19
+L0 3 119
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu_tb.v|
+!i113 1
+R6
+R7
+R8
+vand_operation
+R1
+!i10b 1
+!s100 GKZUL7>zkzK>PXEbd1_C?1
+R2
+IgzWCzNECaOd5nWagDc:b11
+R3
+R0
+w1701803425
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/and_operation.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/and_operation.v
+!i122 15
+Z9 L0 1 39
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/and_operation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/and_operation.v|
+!i113 1
+R6
+R7
+R8
 vcla_4bit
 R1
 !i10b 1
-!s100 6AV_F<Y[SNg_Re[QiAC<`1
+!s100 FMza0WU`HUAJ^YhbC]5e[0
 R2
-I2@RAKh<@1heUmgJgcg1AC1
+IW?bJPPBoDeM_mF0Wo1e]Q0
 R3
 R0
-w1701849772
+w1701892245
 8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_4bit.v
 FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_4bit.v
-!i122 5
-L0 1 27
+!i122 14
+L0 1 26
 R4
 r1
 !s85 0
@@ -60,16 +132,16 @@ R8
 vcla_8bit
 R1
 !i10b 1
-!s100 9o^BIk1T2h6l0dDT;?:kO1
+!s100 >3AMhIRN>z>G0nAo_<z6T0
 R2
-IGkT;;^J?RhM0WDDWf5j5h1
+IUizSTGnTJfT;hRDGj>fAN2
 R3
 R0
-w1701851388
+w1701892232
 8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_8bit.v
 FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_8bit.v
-!i122 7
-L0 1 12
+!i122 18
+Z10 L0 1 15
 R4
 r1
 !s85 0
@@ -92,7 +164,7 @@ R0
 w1701847961
 8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cll_4bit.v
 FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cll_4bit.v
-!i122 4
+!i122 13
 L0 1 34
 R4
 r1
@@ -108,16 +180,16 @@ R8
 vfa
 R1
 !i10b 1
-!s100 @hJoPU]L:^aS9;JffzUTo1
+!s100 ZICZ[HO5=_8L5oZ_@l7P^3
 R2
-IEK92cW0JXh@lkD_:f2H@Q2
+IaiNj>dcL?GKDB?gAXXYM23
 R3
 R0
-w1701596755
+w1701892262
 8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/fa.v
 FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/fa.v
-!i122 3
-L0 1 20
+!i122 12
+L0 1 19
 R4
 r1
 !s85 0
@@ -125,6 +197,30 @@ r1
 R5
 !s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/fa.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/fa.v|
+!i113 1
+R6
+R7
+R8
+vless_than
+R1
+!i10b 1
+!s100 S`d^DVUeomSdVVARZizm40
+R2
+IFX3K;YY4XRJU?JEf_4mKl0
+R3
+R0
+w1701892280
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/less_than.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/less_than.v
+!i122 11
+L0 1 28
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/less_than.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/less_than.v|
 !i113 1
 R6
 R7
@@ -140,8 +236,8 @@ R0
 w1701521670
 8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod.v
 FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod.v
-!i122 2
-L0 1 43
+!i122 10
+Z11 L0 1 43
 R4
 r1
 !s85 0
@@ -164,13 +260,13 @@ R0
 w1701522112
 8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_cu.v
 FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_cu.v
-!i122 1
+!i122 9
 L0 1 70
 R4
 r1
 !s85 0
 31
-Z9 !s108 1701883724.000000
+Z12 !s108 1701893137.000000
 !s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_cu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_cu.v|
 !i113 1
@@ -178,49 +274,217 @@ R6
 R7
 R8
 vmod_dp
-!s110 1701883724
+Z13 !s110 1701893137
 !i10b 1
-!s100 A_Wc__`0[;Lb3KK1U5djn1
+!s100 l=YCblgl=HQZz4ASdDoLm1
 R2
-If0HX:3Y6>4na^[hlQ>3;S0
+IGFKPWXne;eg34zCF5AMh>1
 R3
 R0
-w1701883707
+w1701893100
 8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_dp.v
 FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_dp.v
-!i122 0
-L0 1 58
+!i122 8
+R11
 R4
 r1
 !s85 0
 31
-R9
+R12
 !s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_dp.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_dp.v|
 !i113 1
 R6
 R7
 R8
-vmod_tb
-R1
+vmux2to1
+R13
 !i10b 1
-!s100 5BoM]<Ij>JYa`?;d;ol593
+!s100 :1?D8G865T5cgWVg98SY61
 R2
-I0i8TA=B2RH@4liXf;L^e72
+IHzfWg8;BM<QCO6>0C_V9;3
 R3
 R0
-w1701883702
-8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_tb.v
-FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_tb.v
-!i122 8
-L0 3 86
+w1701810312
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux2to1.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux2to1.v
+!i122 7
+L0 1 14
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_tb.v|
+R12
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux2to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux2to1.v|
+!i113 1
+R6
+R7
+R8
+vmux4to1
+R13
+!i10b 1
+!s100 SZ9RhgBC@h@XVzTYohW5:1
+R2
+ITl26GokVV@e?6RkVR^E5j0
+R3
+R0
+w1701810301
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux4to1.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux4to1.v
+!i122 6
+L0 1 18
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux4to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux4to1.v|
+!i113 1
+R6
+R7
+R8
+vmux8to1
+R13
+!i10b 1
+!s100 fK]7;nD]fjFCbkM;nf2OB3
+R2
+I`8N4[LEVY2Jz0odo5g^bf0
+R3
+R0
+w1701810564
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux8to1.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux8to1.v
+!i122 5
+R10
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux8to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux8to1.v|
+!i113 1
+R6
+R7
+R8
+vmux_32_8to1
+!s110 1701893136
+!i10b 1
+!s100 =CMhakIoo0dhC^8bU;2IO1
+R2
+IR]h1FjMT1NO947DCRccN_2
+R3
+R0
+w1701852106
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux_32_8to1.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux_32_8to1.v
+!i122 0
+R11
+R4
+r1
+!s85 0
+31
+Z14 !s108 1701893136.000000
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux_32_8to1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux_32_8to1.v|
+!i113 1
+R6
+R7
+R8
+vnor_operation
+R13
+!i10b 1
+!s100 NXcdl3>>7X^7n8aN38WmU0
+R2
+IBCL`<>GO6HF2c1^g729WW2
+R3
+R0
+w1701803409
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/nor_operation.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/nor_operation.v
+!i122 4
+R9
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/nor_operation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/nor_operation.v|
+!i113 1
+R6
+R7
+R8
+vnot_32
+R13
+!i10b 1
+!s100 d=kdmchcED?RCWN]d3<UO3
+R2
+I1e>kWdWfm?mkN9>aTl[GE3
+R3
+R0
+w1701806144
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/not_32.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/not_32.v
+!i122 3
+R9
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/not_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/not_32.v|
+!i113 1
+R6
+R7
+R8
+vor_operation
+R13
+!i10b 1
+!s100 V38TV]^PKoOHiUY:515^:1
+R2
+I3h4Nc:4R7T?3?GLFo5h0M3
+R3
+R0
+w1701806672
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/or_operation.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/or_operation.v
+!i122 2
+L0 1 40
+R4
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/or_operation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/or_operation.v|
+!i113 1
+R6
+R7
+R8
+vxor_operation
+R13
+!i10b 1
+!s100 Kb=h1Hlib?DWZ2=b^^W9A3
+R2
+IU1N;i=H7ZVaUkiEaj=Zk<1
+R3
+R0
+w1701803333
+8C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/xor_operation.v
+FC:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/xor_operation.v
+!i122 1
+R9
+R4
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/xor_operation.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules|C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/xor_operation.v|
 !i113 1
 R6
 R7

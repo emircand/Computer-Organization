@@ -15,6 +15,5 @@ xor xor2(sum, p, cin);   // sum is the XOR of p and cin
 // Generate is the AND of the two inputs
 and and1(g, a, b);       // g is the AND of a and b (generate)
 and and2(w1, p, cin);
-//or or1(cout, g, w1);
 
 endmodule

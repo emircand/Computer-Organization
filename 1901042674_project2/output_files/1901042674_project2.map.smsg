@@ -1,1 +1,2 @@
+Warning (10273): Verilog HDL warning at mod_tb.v(67): extended using "x" or "z" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_tb.v Line: 67
 Info (10281): Verilog HDL Declaration information at mod_cu.v(7): object "subtract" differs only in case from object "SUBTRACT" in the same scope File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_cu.v Line: 7

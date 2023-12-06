@@ -10,9 +10,8 @@ module alu(
  output carry
 );
 // Operation results and flags
-wire [31:0] add_res, sub_res, mod_res;
+wire [31:0] add_res, sub_res, mod_res, and_res, or_res, xor_res, nor_res, b_negated;
 wire adder_cout, subtractor_cout, mod_done, lt_res;
-wire [31:0] and_res, or_res, xor_res, nor_res;
 
 adder adder_inst(
   .a(a),
@@ -23,10 +22,9 @@ adder adder_inst(
 );
 
 // Instantiate the subtractor (as an adder with b negated and cin = 1)
-wire [31:0] b_negated;
 not_32 not_inst(
-    .a(b),
-    .res(b_negated)
+  .a(b),
+  .res(b_negated)
 );
 
 
@@ -52,37 +50,37 @@ mod mod_inst(
 // Logic operations
 // AND operation module instance
 and_operation and_op(
-    .a(a),
-    .b(b),
-    .res(and_res)
+  .a(a),
+  .b(b),
+  .res(and_res)
 );
 
 // OR operation module instance
 or_operation or_op(
-    .a(a),
-    .b(b),
-    .res(or_res)
+  .a(a),
+  .b(b),
+  .res(or_res)
 );
 
 // XOR operation module instance
 xor_operation xor_op(
-    .a(a),
-    .b(b),
-    .res(xor_res)
+  .a(a),
+  .b(b),
+  .res(xor_res)
 );
 
 // NOR operation module instance
 nor_operation nor_op(
-    .a(a),
-    .b(b),
-    .res(nor_res)
+  .a(a),
+  .b(b),
+  .res(nor_res)
 );
 
 // Instantiate the less_than module
 less_than lt_module(
-    .a(a),
-    .b(b),
-    .res(lt_res)
+  .a(a),
+  .b(b),
+  .res(lt_res)
 );
 
 //Instantiate the mux to chose operation with aluop

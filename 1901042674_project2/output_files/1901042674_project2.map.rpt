@@ -1,5 +1,5 @@
 Analysis & Elaboration report for 1901042674_project2
-Wed Dec 06 20:27:29 2023
+Wed Dec 06 23:05:27 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,11 +10,44 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla1"
-  6. Port Connectivity Checks: "mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0"
-  7. Port Connectivity Checks: "mod_dp:datapath|adder:adder_inst"
-  8. Analysis & Elaboration Messages
-  9. Analysis & Elaboration Suppressed Messages
+  5. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux31"
+  6. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux30"
+  7. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux29"
+  8. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux28"
+  9. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux27"
+ 10. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux26"
+ 11. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux25"
+ 12. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux24"
+ 13. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux23"
+ 14. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux22"
+ 15. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux21"
+ 16. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux20"
+ 17. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux19"
+ 18. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux18"
+ 19. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux17"
+ 20. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux16"
+ 21. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux15"
+ 22. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux14"
+ 23. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux13"
+ 24. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux12"
+ 25. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux11"
+ 26. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux10"
+ 27. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux9"
+ 28. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux8"
+ 29. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux7"
+ 30. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux6"
+ 31. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux5"
+ 32. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux4"
+ 33. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux3"
+ 34. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux2"
+ 35. Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux1"
+ 36. Port Connectivity Checks: "less_than:lt_module|adder:subtractor"
+ 37. Port Connectivity Checks: "adder:subtractor_inst"
+ 38. Port Connectivity Checks: "adder:adder_inst|cla_8bit:cla0|cla_4bit:cla1"
+ 39. Port Connectivity Checks: "adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0"
+ 40. Port Connectivity Checks: "adder:adder_inst"
+ 41. Analysis & Elaboration Messages
+ 42. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -38,22 +71,28 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Wed Dec 06 20:27:29 2023       ;
-; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                 ; 1901042674_project2                         ;
-; Top-level Entity Name         ; mod                                         ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                   ;
++------------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Wed Dec 06 23:05:27 2023       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; 1901042674_project2                         ;
+; Top-level Entity Name              ; alu                                         ;
+; Family                             ; Cyclone IV GX                               ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total GXB Receiver Channel PCS     ; N/A until Partition Merge                   ;
+; Total GXB Receiver Channel PMA     ; N/A until Partition Merge                   ;
+; Total GXB Transmitter Channel PCS  ; N/A until Partition Merge                   ;
+; Total GXB Transmitter Channel PMA  ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------+
@@ -72,120 +111,418 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                            ;
-+---------------------------------------------------------------------------------+--------------------+---------------------+
-; Option                                                                          ; Setting            ; Default Value       ;
-+---------------------------------------------------------------------------------+--------------------+---------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                     ;
-; Top-level entity name                                                           ; mod                ; 1901042674_project2 ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V           ;
-; Use smart compilation                                                           ; Off                ; Off                 ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                  ;
-; Enable compact report table                                                     ; Off                ; Off                 ;
-; Restructure Multiplexers                                                        ; Auto               ; Auto                ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                 ;
-; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                 ;
-; Preserve fewer node names                                                       ; On                 ; On                  ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable              ;
-; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001        ;
-; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993           ;
-; State Machine Processing                                                        ; Auto               ; Auto                ;
-; Safe State Machine                                                              ; Off                ; Off                 ;
-; Extract Verilog State Machines                                                  ; On                 ; On                  ;
-; Extract VHDL State Machines                                                     ; On                 ; On                  ;
-; Ignore Verilog initial constructs                                               ; Off                ; Off                 ;
-; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000                ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                 ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                  ;
-; Infer RAMs from Raw Logic                                                       ; On                 ; On                  ;
-; Parallel Synthesis                                                              ; On                 ; On                  ;
-; DSP Block Balancing                                                             ; Auto               ; Auto                ;
-; NOT Gate Push-Back                                                              ; On                 ; On                  ;
-; Power-Up Don't Care                                                             ; On                 ; On                  ;
-; Remove Redundant Logic Cells                                                    ; Off                ; Off                 ;
-; Remove Duplicate Registers                                                      ; On                 ; On                  ;
-; Ignore CARRY Buffers                                                            ; Off                ; Off                 ;
-; Ignore CASCADE Buffers                                                          ; Off                ; Off                 ;
-; Ignore GLOBAL Buffers                                                           ; Off                ; Off                 ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                 ;
-; Ignore LCELL Buffers                                                            ; Off                ; Off                 ;
-; Ignore SOFT Buffers                                                             ; On                 ; On                  ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                 ;
-; Optimization Technique                                                          ; Balanced           ; Balanced            ;
-; Carry Chain Length                                                              ; 70                 ; 70                  ;
-; Auto Carry Chains                                                               ; On                 ; On                  ;
-; Auto Open-Drain Pins                                                            ; On                 ; On                  ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                 ;
-; Auto ROM Replacement                                                            ; On                 ; On                  ;
-; Auto RAM Replacement                                                            ; On                 ; On                  ;
-; Auto DSP Block Replacement                                                      ; On                 ; On                  ;
-; Auto Shift Register Replacement                                                 ; Auto               ; Auto                ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto                ;
-; Auto Clock Enable Replacement                                                   ; On                 ; On                  ;
-; Strict RAM Replacement                                                          ; Off                ; Off                 ;
-; Allow Synchronous Control Signals                                               ; On                 ; On                  ;
-; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                 ;
-; Auto Resource Sharing                                                           ; Off                ; Off                 ;
-; Allow Any RAM Size For Recognition                                              ; Off                ; Off                 ;
-; Allow Any ROM Size For Recognition                                              ; Off                ; Off                 ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                 ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                  ;
-; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                 ;
-; Timing-Driven Synthesis                                                         ; On                 ; On                  ;
-; Report Parameter Settings                                                       ; On                 ; On                  ;
-; Report Source Assignments                                                       ; On                 ; On                  ;
-; Report Connectivity Checks                                                      ; On                 ; On                  ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                 ;
-; Synchronization Register Chain Length                                           ; 3                  ; 3                   ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation  ;
-; HDL message level                                                               ; Level2             ; Level2              ;
-; Suppress Register Optimization Related Messages                                 ; Off                ; Off                 ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000                ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000                ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                 ;
-; Clock MUX Protection                                                            ; On                 ; On                  ;
-; Auto Gated Clock Conversion                                                     ; Off                ; Off                 ;
-; Block Design Naming                                                             ; Auto               ; Auto                ;
-; SDC constraint protection                                                       ; Off                ; Off                 ;
-; Synthesis Effort                                                                ; Auto               ; Auto                ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                  ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                 ;
-; Analysis & Synthesis Message Level                                              ; Medium             ; Medium              ;
-; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto                ;
-; Resource Aware Inference For Block RAM                                          ; On                 ; On                  ;
-; Automatic Parallel Synthesis                                                    ; On                 ; On                  ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                 ;
-+---------------------------------------------------------------------------------+--------------------+---------------------+
++-------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                             ;
++------------------------------------------------------------------+--------------------+---------------------+
+; Option                                                           ; Setting            ; Default Value       ;
++------------------------------------------------------------------+--------------------+---------------------+
+; Top-level entity name                                            ; alu                ; 1901042674_project2 ;
+; Family name                                                      ; Cyclone IV GX      ; Cyclone V           ;
+; Use smart compilation                                            ; Off                ; Off                 ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                  ;
+; Enable compact report table                                      ; Off                ; Off                 ;
+; Restructure Multiplexers                                         ; Auto               ; Auto                ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                 ;
+; Preserve fewer node names                                        ; On                 ; On                  ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable              ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001        ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993           ;
+; State Machine Processing                                         ; Auto               ; Auto                ;
+; Safe State Machine                                               ; Off                ; Off                 ;
+; Extract Verilog State Machines                                   ; On                 ; On                  ;
+; Extract VHDL State Machines                                      ; On                 ; On                  ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                 ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000                ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                 ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                  ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                  ;
+; Parallel Synthesis                                               ; On                 ; On                  ;
+; DSP Block Balancing                                              ; Auto               ; Auto                ;
+; NOT Gate Push-Back                                               ; On                 ; On                  ;
+; Power-Up Don't Care                                              ; On                 ; On                  ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                 ;
+; Remove Duplicate Registers                                       ; On                 ; On                  ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                 ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                 ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                 ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                 ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                 ;
+; Ignore SOFT Buffers                                              ; On                 ; On                  ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                 ;
+; Optimization Technique                                           ; Balanced           ; Balanced            ;
+; Carry Chain Length                                               ; 70                 ; 70                  ;
+; Auto Carry Chains                                                ; On                 ; On                  ;
+; Auto Open-Drain Pins                                             ; On                 ; On                  ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                 ;
+; Auto ROM Replacement                                             ; On                 ; On                  ;
+; Auto RAM Replacement                                             ; On                 ; On                  ;
+; Auto DSP Block Replacement                                       ; On                 ; On                  ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto                ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto                ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                  ;
+; Strict RAM Replacement                                           ; Off                ; Off                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                  ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                 ;
+; Auto RAM Block Balancing                                         ; On                 ; On                  ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                 ;
+; Auto Resource Sharing                                            ; Off                ; Off                 ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                 ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                 ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                 ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                  ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                 ;
+; Timing-Driven Synthesis                                          ; On                 ; On                  ;
+; Report Parameter Settings                                        ; On                 ; On                  ;
+; Report Source Assignments                                        ; On                 ; On                  ;
+; Report Connectivity Checks                                       ; On                 ; On                  ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                 ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                   ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation  ;
+; HDL message level                                                ; Level2             ; Level2              ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                 ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000                ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000                ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                 ;
+; Clock MUX Protection                                             ; On                 ; On                  ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                 ;
+; Block Design Naming                                              ; Auto               ; Auto                ;
+; SDC constraint protection                                        ; Off                ; Off                 ;
+; Synthesis Effort                                                 ; Auto               ; Auto                ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                  ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium              ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto                ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                  ;
++------------------------------------------------------------------+--------------------+---------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux31" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux30" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux29" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux28" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux27" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux26" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux25" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux24" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux23" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux22" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux21" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux20" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux19" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux18" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux17" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux16" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux15" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux14" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux13" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux12" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux11" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux10" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                     ;
++------+-------+----------+----------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux9" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux8" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux7" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux6" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux5" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux4" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux3" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux2" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "mux_32_8to1:mux0|mux8to1:mux1" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; e    ; Input ; Info     ; Stuck at GND                    ;
++------+-------+----------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "less_than:lt_module|adder:subtractor"                                                     ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; cin        ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; sum[30..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cout       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla1"                       ;
+; Port Connectivity Checks: "adder:subtractor_inst"                                                              ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-; p    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; g    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0"                       ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; p    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; g    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mod_dp:datapath|adder:adder_inst"                                                   ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
+; cin  ; Input  ; Info     ; Stuck at VCC                                                                        ;
 ; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adder:adder_inst|cla_8bit:cla0|cla_4bit:cla1"                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; p    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; g    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0"                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; p    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; g    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "adder:adder_inst" ;
++------+-------+----------+--------------------+
+; Port ; Type  ; Severity ; Details            ;
++------+-------+----------+--------------------+
+; cin  ; Input ; Info     ; Stuck at GND       ;
++------+-------+----------+--------------------+
 
 
 +---------------------------------+
@@ -194,7 +531,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Dec 06 20:27:22 2023
+    Info: Processing started: Wed Dec 06 23:05:20 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 1901042674_project2 -c 1901042674_project2 --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -230,7 +567,6 @@ Warning (12019): Can't analyze file -- file my_modules/decoder_3to8.v is missing
 Warning (12019): Can't analyze file -- file my_modules/cll_32bit.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file my_modules/cll_4bit.v
     Info (12023): Found entity 1: cll_4bit File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cll_4bit.v Line: 1
-Warning (12019): Can't analyze file -- file my_modules/cla_32bit.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file my_modules/cla_4bit_tb.v
     Info (12023): Found entity 1: cla_4bit_tb File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_4bit_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file my_modules/cla_4bit.v
@@ -249,18 +585,29 @@ Info (12021): Found 1 design units, including 1 entities, in source file my_modu
     Info (12023): Found entity 1: adder File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/adder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file my_modules/cla_8bit.v
     Info (12023): Found entity 1: cla_8bit File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_8bit.v Line: 1
-Info (12127): Elaborating entity "mod" for the top level hierarchy
-Info (12128): Elaborating entity "mod_cu" for hierarchy "mod_cu:control_unit" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod.v Line: 26
-Info (12128): Elaborating entity "mod_dp" for hierarchy "mod_dp:datapath" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod.v Line: 38
-Info (12128): Elaborating entity "adder" for hierarchy "mod_dp:datapath|adder:adder_inst" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_dp.v Line: 39
-Info (12128): Elaborating entity "cla_8bit" for hierarchy "mod_dp:datapath|adder:adder_inst|cla_8bit:cla0" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/adder.v Line: 10
-Info (12128): Elaborating entity "cla_4bit" for hierarchy "mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_8bit.v Line: 9
-Info (12128): Elaborating entity "cll_4bit" for hierarchy "mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0|cll_4bit:cll" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_4bit.v Line: 16
-Info (12128): Elaborating entity "fa" for hierarchy "mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0|fa:fa0" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_4bit.v Line: 19
+Info (12127): Elaborating entity "alu" for the top level hierarchy
+Info (12128): Elaborating entity "adder" for hierarchy "adder:adder_inst" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v Line: 22
+Info (12128): Elaborating entity "cla_8bit" for hierarchy "adder:adder_inst|cla_8bit:cla0" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/adder.v Line: 10
+Info (12128): Elaborating entity "cla_4bit" for hierarchy "adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_8bit.v Line: 12
+Info (12128): Elaborating entity "cll_4bit" for hierarchy "adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0|cll_4bit:cll" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_4bit.v Line: 15
+Info (12128): Elaborating entity "fa" for hierarchy "adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0|fa:fa0" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_4bit.v Line: 18
+Info (12128): Elaborating entity "not_32" for hierarchy "not_32:not_inst" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v Line: 28
+Info (12128): Elaborating entity "mod" for hierarchy "mod:mod_inst" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v Line: 48
+Info (12128): Elaborating entity "mod_cu" for hierarchy "mod:mod_inst|mod_cu:control_unit" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod.v Line: 26
+Info (12128): Elaborating entity "mod_dp" for hierarchy "mod:mod_inst|mod_dp:datapath" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod.v Line: 38
+Info (12128): Elaborating entity "and_operation" for hierarchy "and_operation:and_op" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v Line: 56
+Info (12128): Elaborating entity "or_operation" for hierarchy "or_operation:or_op" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v Line: 63
+Info (12128): Elaborating entity "xor_operation" for hierarchy "xor_operation:xor_op" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v Line: 70
+Info (12128): Elaborating entity "nor_operation" for hierarchy "nor_operation:nor_op" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v Line: 77
+Info (12128): Elaborating entity "less_than" for hierarchy "less_than:lt_module" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v Line: 84
+Info (12128): Elaborating entity "mux_32_8to1" for hierarchy "mux_32_8to1:mux0" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v Line: 98
+Info (12128): Elaborating entity "mux8to1" for hierarchy "mux_32_8to1:mux0|mux8to1:mux0" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux_32_8to1.v Line: 9
+Info (12128): Elaborating entity "mux4to1" for hierarchy "mux_32_8to1:mux0|mux8to1:mux0|mux4to1:Mux0" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux8to1.v Line: 9
+Info (12128): Elaborating entity "mux2to1" for hierarchy "mux_32_8to1:mux0|mux8to1:mux0|mux2to1:MuxFinal" File: C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux8to1.v Line: 13
 Info (144001): Generated suppressed messages file C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/output_files/1901042674_project2.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4769 megabytes
-    Info: Processing ended: Wed Dec 06 20:27:29 2023
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4785 megabytes
+    Info: Processing ended: Wed Dec 06 23:05:27 2023
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:11
 

@@ -10,105 +10,231 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux_32_8to1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:36 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux_32_8to1.v 
+# -- Compiling module mux_32_8to1
+# 
+# Top level modules:
+# 	mux_32_8to1
+# End time: 23:05:36 on Dec 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/xor_operation.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:36 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/xor_operation.v 
+# -- Compiling module xor_operation
+# 
+# Top level modules:
+# 	xor_operation
+# End time: 23:05:37 on Dec 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/or_operation.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:37 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/or_operation.v 
+# -- Compiling module or_operation
+# 
+# Top level modules:
+# 	or_operation
+# End time: 23:05:37 on Dec 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/not_32.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:37 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/not_32.v 
+# -- Compiling module not_32
+# 
+# Top level modules:
+# 	not_32
+# End time: 23:05:37 on Dec 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/nor_operation.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:37 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/nor_operation.v 
+# -- Compiling module nor_operation
+# 
+# Top level modules:
+# 	nor_operation
+# End time: 23:05:37 on Dec 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux8to1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:37 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux8to1.v 
+# -- Compiling module mux8to1
+# 
+# Top level modules:
+# 	mux8to1
+# End time: 23:05:37 on Dec 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux4to1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:37 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux4to1.v 
+# -- Compiling module mux4to1
+# 
+# Top level modules:
+# 	mux4to1
+# End time: 23:05:37 on Dec 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux2to1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:37 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mux2to1.v 
+# -- Compiling module mux2to1
+# 
+# Top level modules:
+# 	mux2to1
+# End time: 23:05:37 on Dec 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_dp.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:28:44 on Dec 06,2023
+# Start time: 23:05:37 on Dec 06,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_dp.v 
 # -- Compiling module mod_dp
 # 
 # Top level modules:
 # 	mod_dp
-# End time: 20:28:44 on Dec 06,2023, Elapsed time: 0:00:00
+# End time: 23:05:37 on Dec 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_cu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:28:44 on Dec 06,2023
+# Start time: 23:05:37 on Dec 06,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_cu.v 
 # -- Compiling module mod_cu
 # 
 # Top level modules:
 # 	mod_cu
-# End time: 20:28:45 on Dec 06,2023, Elapsed time: 0:00:01
+# End time: 23:05:38 on Dec 06,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:28:45 on Dec 06,2023
+# Start time: 23:05:38 on Dec 06,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod.v 
 # -- Compiling module mod
 # 
 # Top level modules:
 # 	mod
-# End time: 20:28:45 on Dec 06,2023, Elapsed time: 0:00:00
+# End time: 23:05:38 on Dec 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/less_than.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:38 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/less_than.v 
+# -- Compiling module less_than
+# 
+# Top level modules:
+# 	less_than
+# End time: 23:05:38 on Dec 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/fa.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:28:45 on Dec 06,2023
+# Start time: 23:05:38 on Dec 06,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/fa.v 
 # -- Compiling module fa
 # 
 # Top level modules:
 # 	fa
-# End time: 20:28:45 on Dec 06,2023, Elapsed time: 0:00:00
+# End time: 23:05:38 on Dec 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cll_4bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:28:45 on Dec 06,2023
+# Start time: 23:05:38 on Dec 06,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cll_4bit.v 
 # -- Compiling module cll_4bit
 # 
 # Top level modules:
 # 	cll_4bit
-# End time: 20:28:45 on Dec 06,2023, Elapsed time: 0:00:00
+# End time: 23:05:38 on Dec 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_4bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:28:45 on Dec 06,2023
+# Start time: 23:05:38 on Dec 06,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_4bit.v 
 # -- Compiling module cla_4bit
 # 
 # Top level modules:
 # 	cla_4bit
-# End time: 20:28:45 on Dec 06,2023, Elapsed time: 0:00:00
+# End time: 23:05:38 on Dec 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/and_operation.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:38 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/and_operation.v 
+# -- Compiling module and_operation
+# 
+# Top level modules:
+# 	and_operation
+# End time: 23:05:38 on Dec 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:05:38 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 23:05:38 on Dec 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:28:45 on Dec 06,2023
+# Start time: 23:05:38 on Dec 06,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/adder.v 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 20:28:45 on Dec 06,2023, Elapsed time: 0:00:00
+# End time: 23:05:38 on Dec 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_8bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:28:45 on Dec 06,2023
+# Start time: 23:05:38 on Dec 06,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/cla_8bit.v 
 # -- Compiling module cla_8bit
 # 
 # Top level modules:
 # 	cla_8bit
-# End time: 20:28:45 on Dec 06,2023, Elapsed time: 0:00:00
+# End time: 23:05:38 on Dec 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules {C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:28:45 on Dec 06,2023
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_tb.v 
-# -- Compiling module mod_tb
+# Start time: 23:05:38 on Dec 06,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules" C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu_tb.v 
+# -- Compiling module alu_tb
 # 
 # Top level modules:
-# 	mod_tb
-# End time: 20:28:45 on Dec 06,2023, Elapsed time: 0:00:00
+# 	alu_tb
+# End time: 23:05:39 on Dec 06,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  mod_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" mod_tb 
-# Start time: 20:28:46 on Dec 06,2023
-# Loading work.mod_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  alu_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" alu_tb 
+# Start time: 23:05:39 on Dec 06,2023
+# Loading work.alu_tb
+# Loading work.alu
+# Loading work.adder
+# Loading work.cla_8bit
+# Loading work.cla_4bit
+# Loading work.cll_4bit
+# Loading work.fa
+# Loading work.not_32
 # Loading work.mod
 # Loading work.mod_cu
 # Loading work.mod_dp
+# Loading work.and_operation
+# Loading work.or_operation
+# Loading work.xor_operation
+# Loading work.nor_operation
+# Loading work.less_than
+# Loading work.mux_32_8to1
+# Loading work.mux8to1
+# Loading work.mux4to1
+# Loading work.mux2to1
 # 
 # add wave *
 # view structure
@@ -116,12 +242,18 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Test case passed: A=        50, B=        25, RESULT=         0 (Expected:          0)
-# Test case passed: A=       100, B=         3, RESULT=         1 (Expected:          1)
-# Test case passed: A=     12345, B=        67, RESULT=        17 (Expected:         17)
-# ** Note: $finish    : C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_tb.v(48)
-#    Time: 4635 ns  Iteration: 0  Instance: /mod_tb
+# aluop: 000, a: 11111111101010101101110100010110, b: 10101011110011010000000000010010 ; AND Actual Result: 10101011100010000000000000010010, Expected Result: 10101011100010000000000000010010
+# aluop: 001, a: 11111111101010101101110100010110, b: 10101011110011010000000000010010 ; OR Actual Result: 11111111111011111101110100010110, Expected Result: 11111111111011111101110100010110
+# aluop: 010, a: 11111111101010101101110100010110, b: 10101011110011010000000000010010 ; XOR Actual Result: 01010100011001111101110100000100, Expected Result: 01010100011001111101110100000100
+# aluop: 011, a: 11111111101010101101110100010110, b: 10101011110011010000000000010010 ; NOR Actual Result: 00000000000100000010001011101001, Expected Result: 00000000000100000010001011101001
+# aluop: 100, a: 2882338834, b: 4289387798 ; Less Than Actual Result: 00000000000000000000000000000001, Expected Result: 1
+# aluop: 100, a: 4289387798, b: 2882338834 ; Less Than Actual Result: 00000000000000000000000000000000, Expected Result: 0
+# aluop: 101, a: 11111111101010101101110100010110, b: 10101011110011010000000000010010 ; ADD Actual Result: 10101011011101111101110100101000, Expected Result: 10101011011101111101110100101000
+# aluop: 110, a: 11111111101010101101110100010110, b: 10101011110011010000000000010010 ; SUB Actual Result: 01010011110111011101110000000100, Expected Result: 01010011110111011101110100000100
+# aluop: 111, a:         22, b:          6 ; MOD Actual Result:          4, Expected Result:          4
+# ** Note: $finish    : C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu_tb.v(118)
+#    Time: 265 ns  Iteration: 0  Instance: /alu_tb
 # 1
-# Break in Module mod_tb at C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/mod_tb.v line 48
-# End time: 20:28:58 on Dec 06,2023, Elapsed time: 0:00:12
+# Break in Module alu_tb at C:/Users/emirc/Desktop/CodeWorks/verilog/1901042674_project2/my_modules/alu_tb.v line 118
+# End time: 23:06:20 on Dec 06,2023, Elapsed time: 0:00:41
 # Errors: 0, Warnings: 0
