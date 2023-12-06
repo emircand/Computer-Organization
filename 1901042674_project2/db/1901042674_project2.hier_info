@@ -1,0 +1,1306 @@
+|mod
+clk => clk.IN2
+reset => reset.IN2
+start => start.IN1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
+result[0] << mod_dp:datapath.temp
+result[1] << mod_dp:datapath.temp
+result[2] << mod_dp:datapath.temp
+result[3] << mod_dp:datapath.temp
+result[4] << mod_dp:datapath.temp
+result[5] << mod_dp:datapath.temp
+result[6] << mod_dp:datapath.temp
+result[7] << mod_dp:datapath.temp
+result[8] << mod_dp:datapath.temp
+result[9] << mod_dp:datapath.temp
+result[10] << mod_dp:datapath.temp
+result[11] << mod_dp:datapath.temp
+result[12] << mod_dp:datapath.temp
+result[13] << mod_dp:datapath.temp
+result[14] << mod_dp:datapath.temp
+result[15] << mod_dp:datapath.temp
+result[16] << mod_dp:datapath.temp
+result[17] << mod_dp:datapath.temp
+result[18] << mod_dp:datapath.temp
+result[19] << mod_dp:datapath.temp
+result[20] << mod_dp:datapath.temp
+result[21] << mod_dp:datapath.temp
+result[22] << mod_dp:datapath.temp
+result[23] << mod_dp:datapath.temp
+result[24] << mod_dp:datapath.temp
+result[25] << mod_dp:datapath.temp
+result[26] << mod_dp:datapath.temp
+result[27] << mod_dp:datapath.temp
+result[28] << mod_dp:datapath.temp
+result[29] << mod_dp:datapath.temp
+result[30] << mod_dp:datapath.temp
+result[31] << mod_dp:datapath.temp
+done << mod_cu:control_unit.done
+
+
+|mod|mod_cu:control_unit
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+start => next_state.LOAD.DATAB
+start => Selector0.IN1
+is_less_than_b => done.DATAB
+is_less_than_b => Selector0.IN3
+is_less_than_b => Selector1.IN2
+load_a <= load_a.DB_MAX_OUTPUT_PORT_TYPE
+subtract <= subtract.DB_MAX_OUTPUT_PORT_TYPE
+done <= done.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath
+clk => temp[0]~reg0.CLK
+clk => temp[1]~reg0.CLK
+clk => temp[2]~reg0.CLK
+clk => temp[3]~reg0.CLK
+clk => temp[4]~reg0.CLK
+clk => temp[5]~reg0.CLK
+clk => temp[6]~reg0.CLK
+clk => temp[7]~reg0.CLK
+clk => temp[8]~reg0.CLK
+clk => temp[9]~reg0.CLK
+clk => temp[10]~reg0.CLK
+clk => temp[11]~reg0.CLK
+clk => temp[12]~reg0.CLK
+clk => temp[13]~reg0.CLK
+clk => temp[14]~reg0.CLK
+clk => temp[15]~reg0.CLK
+clk => temp[16]~reg0.CLK
+clk => temp[17]~reg0.CLK
+clk => temp[18]~reg0.CLK
+clk => temp[19]~reg0.CLK
+clk => temp[20]~reg0.CLK
+clk => temp[21]~reg0.CLK
+clk => temp[22]~reg0.CLK
+clk => temp[23]~reg0.CLK
+clk => temp[24]~reg0.CLK
+clk => temp[25]~reg0.CLK
+clk => temp[26]~reg0.CLK
+clk => temp[27]~reg0.CLK
+clk => temp[28]~reg0.CLK
+clk => temp[29]~reg0.CLK
+clk => temp[30]~reg0.CLK
+clk => temp[31]~reg0.CLK
+reset => temp[0]~reg0.ACLR
+reset => temp[1]~reg0.ACLR
+reset => temp[2]~reg0.ACLR
+reset => temp[3]~reg0.ACLR
+reset => temp[4]~reg0.ACLR
+reset => temp[5]~reg0.ACLR
+reset => temp[6]~reg0.ACLR
+reset => temp[7]~reg0.ACLR
+reset => temp[8]~reg0.ACLR
+reset => temp[9]~reg0.ACLR
+reset => temp[10]~reg0.ACLR
+reset => temp[11]~reg0.ACLR
+reset => temp[12]~reg0.ACLR
+reset => temp[13]~reg0.ACLR
+reset => temp[14]~reg0.ACLR
+reset => temp[15]~reg0.ACLR
+reset => temp[16]~reg0.ACLR
+reset => temp[17]~reg0.ACLR
+reset => temp[18]~reg0.ACLR
+reset => temp[19]~reg0.ACLR
+reset => temp[20]~reg0.ACLR
+reset => temp[21]~reg0.ACLR
+reset => temp[22]~reg0.ACLR
+reset => temp[23]~reg0.ACLR
+reset => temp[24]~reg0.ACLR
+reset => temp[25]~reg0.ACLR
+reset => temp[26]~reg0.ACLR
+reset => temp[27]~reg0.ACLR
+reset => temp[28]~reg0.ACLR
+reset => temp[29]~reg0.ACLR
+reset => temp[30]~reg0.ACLR
+reset => temp[31]~reg0.ACLR
+a[0] => mux_out1.DATAB
+a[1] => mux_out1.DATAB
+a[2] => mux_out1.DATAB
+a[3] => mux_out1.DATAB
+a[4] => mux_out1.DATAB
+a[5] => mux_out1.DATAB
+a[6] => mux_out1.DATAB
+a[7] => mux_out1.DATAB
+a[8] => mux_out1.DATAB
+a[9] => mux_out1.DATAB
+a[10] => mux_out1.DATAB
+a[11] => mux_out1.DATAB
+a[12] => mux_out1.DATAB
+a[13] => mux_out1.DATAB
+a[14] => mux_out1.DATAB
+a[15] => mux_out1.DATAB
+a[16] => mux_out1.DATAB
+a[17] => mux_out1.DATAB
+a[18] => mux_out1.DATAB
+a[19] => mux_out1.DATAB
+a[20] => mux_out1.DATAB
+a[21] => mux_out1.DATAB
+a[22] => mux_out1.DATAB
+a[23] => mux_out1.DATAB
+a[24] => mux_out1.DATAB
+a[25] => mux_out1.DATAB
+a[26] => mux_out1.DATAB
+a[27] => mux_out1.DATAB
+a[28] => mux_out1.DATAB
+a[29] => mux_out1.DATAB
+a[30] => mux_out1.DATAB
+a[31] => mux_out1.DATAB
+b[0] => mux_out2[0].DATAB
+b[0] => LessThan0.IN32
+b[1] => mux_out2[1].DATAB
+b[1] => LessThan0.IN31
+b[2] => mux_out2[2].DATAB
+b[2] => LessThan0.IN30
+b[3] => mux_out2[3].DATAB
+b[3] => LessThan0.IN29
+b[4] => mux_out2[4].DATAB
+b[4] => LessThan0.IN28
+b[5] => mux_out2[5].DATAB
+b[5] => LessThan0.IN27
+b[6] => mux_out2[6].DATAB
+b[6] => LessThan0.IN26
+b[7] => mux_out2[7].DATAB
+b[7] => LessThan0.IN25
+b[8] => mux_out2[8].DATAB
+b[8] => LessThan0.IN24
+b[9] => mux_out2[9].DATAB
+b[9] => LessThan0.IN23
+b[10] => mux_out2[10].DATAB
+b[10] => LessThan0.IN22
+b[11] => mux_out2[11].DATAB
+b[11] => LessThan0.IN21
+b[12] => mux_out2[12].DATAB
+b[12] => LessThan0.IN20
+b[13] => mux_out2[13].DATAB
+b[13] => LessThan0.IN19
+b[14] => mux_out2[14].DATAB
+b[14] => LessThan0.IN18
+b[15] => mux_out2[15].DATAB
+b[15] => LessThan0.IN17
+b[16] => mux_out2[16].DATAB
+b[16] => LessThan0.IN16
+b[17] => mux_out2[17].DATAB
+b[17] => LessThan0.IN15
+b[18] => mux_out2[18].DATAB
+b[18] => LessThan0.IN14
+b[19] => mux_out2[19].DATAB
+b[19] => LessThan0.IN13
+b[20] => mux_out2[20].DATAB
+b[20] => LessThan0.IN12
+b[21] => mux_out2[21].DATAB
+b[21] => LessThan0.IN11
+b[22] => mux_out2[22].DATAB
+b[22] => LessThan0.IN10
+b[23] => mux_out2[23].DATAB
+b[23] => LessThan0.IN9
+b[24] => mux_out2[24].DATAB
+b[24] => LessThan0.IN8
+b[25] => mux_out2[25].DATAB
+b[25] => LessThan0.IN7
+b[26] => mux_out2[26].DATAB
+b[26] => LessThan0.IN6
+b[27] => mux_out2[27].DATAB
+b[27] => LessThan0.IN5
+b[28] => mux_out2[28].DATAB
+b[28] => LessThan0.IN4
+b[29] => mux_out2[29].DATAB
+b[29] => LessThan0.IN3
+b[30] => mux_out2[30].DATAB
+b[30] => LessThan0.IN2
+b[31] => mux_out2[31].DATAB
+b[31] => LessThan0.IN1
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+load_a => mux_out1.OUTPUTSELECT
+subtract => subtract.IN1
+temp[0] <= temp[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[1] <= temp[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[2] <= temp[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[3] <= temp[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[4] <= temp[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[5] <= temp[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[6] <= temp[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[7] <= temp[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[8] <= temp[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[9] <= temp[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[10] <= temp[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[11] <= temp[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[12] <= temp[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[13] <= temp[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[14] <= temp[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[15] <= temp[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[16] <= temp[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[17] <= temp[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[18] <= temp[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[19] <= temp[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[20] <= temp[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[21] <= temp[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[22] <= temp[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[23] <= temp[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[24] <= temp[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[25] <= temp[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[26] <= temp[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[27] <= temp[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[28] <= temp[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[29] <= temp[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[30] <= temp[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+temp[31] <= temp[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+is_less_than_b <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+a[16] => a[16].IN1
+a[17] => a[17].IN1
+a[18] => a[18].IN1
+a[19] => a[19].IN1
+a[20] => a[20].IN1
+a[21] => a[21].IN1
+a[22] => a[22].IN1
+a[23] => a[23].IN1
+a[24] => a[24].IN1
+a[25] => a[25].IN1
+a[26] => a[26].IN1
+a[27] => a[27].IN1
+a[28] => a[28].IN1
+a[29] => a[29].IN1
+a[30] => a[30].IN1
+a[31] => a[31].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+b[16] => b[16].IN1
+b[17] => b[17].IN1
+b[18] => b[18].IN1
+b[19] => b[19].IN1
+b[20] => b[20].IN1
+b[21] => b[21].IN1
+b[22] => b[22].IN1
+b[23] => b[23].IN1
+b[24] => b[24].IN1
+b[25] => b[25].IN1
+b[26] => b[26].IN1
+b[27] => b[27].IN1
+b[28] => b[28].IN1
+b[29] => b[29].IN1
+b[30] => b[30].IN1
+b[31] => b[31].IN1
+cin => cin.IN1
+sum[0] <= cla_8bit:cla0.sum
+sum[1] <= cla_8bit:cla0.sum
+sum[2] <= cla_8bit:cla0.sum
+sum[3] <= cla_8bit:cla0.sum
+sum[4] <= cla_8bit:cla0.sum
+sum[5] <= cla_8bit:cla0.sum
+sum[6] <= cla_8bit:cla0.sum
+sum[7] <= cla_8bit:cla0.sum
+sum[8] <= cla_8bit:cla1.sum
+sum[9] <= cla_8bit:cla1.sum
+sum[10] <= cla_8bit:cla1.sum
+sum[11] <= cla_8bit:cla1.sum
+sum[12] <= cla_8bit:cla1.sum
+sum[13] <= cla_8bit:cla1.sum
+sum[14] <= cla_8bit:cla1.sum
+sum[15] <= cla_8bit:cla1.sum
+sum[16] <= cla_8bit:cla2.sum
+sum[17] <= cla_8bit:cla2.sum
+sum[18] <= cla_8bit:cla2.sum
+sum[19] <= cla_8bit:cla2.sum
+sum[20] <= cla_8bit:cla2.sum
+sum[21] <= cla_8bit:cla2.sum
+sum[22] <= cla_8bit:cla2.sum
+sum[23] <= cla_8bit:cla2.sum
+sum[24] <= cla_8bit:cla3.sum
+sum[25] <= cla_8bit:cla3.sum
+sum[26] <= cla_8bit:cla3.sum
+sum[27] <= cla_8bit:cla3.sum
+sum[28] <= cla_8bit:cla3.sum
+sum[29] <= cla_8bit:cla3.sum
+sum[30] <= cla_8bit:cla3.sum
+sum[31] <= cla_8bit:cla3.sum
+cout <= buffer0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0
+sum[0] <= cla_4bit:cla0.sum
+sum[1] <= cla_4bit:cla0.sum
+sum[2] <= cla_4bit:cla0.sum
+sum[3] <= cla_4bit:cla0.sum
+sum[4] <= cla_4bit:cla1.sum
+sum[5] <= cla_4bit:cla1.sum
+sum[6] <= cla_4bit:cla1.sum
+sum[7] <= cla_4bit:cla1.sum
+cout <= cla_4bit:cla1.cout
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+cin => cin.IN1
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN2
+sum[0] <= fa:fa0.sum
+sum[1] <= fa:fa1.sum
+sum[2] <= fa:fa2.sum
+sum[3] <= fa:fa3.sum
+g[0] <= g[0].DB_MAX_OUTPUT_PORT_TYPE
+g[1] <= g[1].DB_MAX_OUTPUT_PORT_TYPE
+g[2] <= g[2].DB_MAX_OUTPUT_PORT_TYPE
+g[3] <= g[3].DB_MAX_OUTPUT_PORT_TYPE
+p[0] <= p[0].DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= p[1].DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= p[2].DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= p[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= buf_cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0|cll_4bit:cll
+g[0] => and2.IN0
+g[0] => or1.IN1
+g[1] => and3.IN0
+g[1] => or2.IN2
+g[2] => and4.IN0
+g[2] => or3.IN3
+g[3] => or4.IN3
+p[0] => and1.IN0
+p[1] => and2.IN1
+p[1] => and5.IN1
+p[2] => and3.IN1
+p[2] => and6.IN1
+p[2] => and8.IN1
+p[3] => and4.IN1
+p[3] => and7.IN1
+p[3] => and9.IN1
+cin => and1.IN1
+cout[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+cout[1] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+cout[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+cout[3] <= or4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0|fa:fa0
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0|fa:fa1
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0|fa:fa2
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla0|fa:fa3
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN2
+sum[0] <= fa:fa0.sum
+sum[1] <= fa:fa1.sum
+sum[2] <= fa:fa2.sum
+sum[3] <= fa:fa3.sum
+g[0] <= g[0].DB_MAX_OUTPUT_PORT_TYPE
+g[1] <= g[1].DB_MAX_OUTPUT_PORT_TYPE
+g[2] <= g[2].DB_MAX_OUTPUT_PORT_TYPE
+g[3] <= g[3].DB_MAX_OUTPUT_PORT_TYPE
+p[0] <= p[0].DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= p[1].DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= p[2].DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= p[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= buf_cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla1|cll_4bit:cll
+g[0] => and2.IN0
+g[0] => or1.IN1
+g[1] => and3.IN0
+g[1] => or2.IN2
+g[2] => and4.IN0
+g[2] => or3.IN3
+g[3] => or4.IN3
+p[0] => and1.IN0
+p[1] => and2.IN1
+p[1] => and5.IN1
+p[2] => and3.IN1
+p[2] => and6.IN1
+p[2] => and8.IN1
+p[3] => and4.IN1
+p[3] => and7.IN1
+p[3] => and9.IN1
+cin => and1.IN1
+cout[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+cout[1] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+cout[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+cout[3] <= or4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla1|fa:fa0
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla1|fa:fa1
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla1|fa:fa2
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla0|cla_4bit:cla1|fa:fa3
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1
+sum[0] <= cla_4bit:cla0.sum
+sum[1] <= cla_4bit:cla0.sum
+sum[2] <= cla_4bit:cla0.sum
+sum[3] <= cla_4bit:cla0.sum
+sum[4] <= cla_4bit:cla1.sum
+sum[5] <= cla_4bit:cla1.sum
+sum[6] <= cla_4bit:cla1.sum
+sum[7] <= cla_4bit:cla1.sum
+cout <= cla_4bit:cla1.cout
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+cin => cin.IN1
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN2
+sum[0] <= fa:fa0.sum
+sum[1] <= fa:fa1.sum
+sum[2] <= fa:fa2.sum
+sum[3] <= fa:fa3.sum
+g[0] <= g[0].DB_MAX_OUTPUT_PORT_TYPE
+g[1] <= g[1].DB_MAX_OUTPUT_PORT_TYPE
+g[2] <= g[2].DB_MAX_OUTPUT_PORT_TYPE
+g[3] <= g[3].DB_MAX_OUTPUT_PORT_TYPE
+p[0] <= p[0].DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= p[1].DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= p[2].DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= p[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= buf_cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla0|cll_4bit:cll
+g[0] => and2.IN0
+g[0] => or1.IN1
+g[1] => and3.IN0
+g[1] => or2.IN2
+g[2] => and4.IN0
+g[2] => or3.IN3
+g[3] => or4.IN3
+p[0] => and1.IN0
+p[1] => and2.IN1
+p[1] => and5.IN1
+p[2] => and3.IN1
+p[2] => and6.IN1
+p[2] => and8.IN1
+p[3] => and4.IN1
+p[3] => and7.IN1
+p[3] => and9.IN1
+cin => and1.IN1
+cout[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+cout[1] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+cout[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+cout[3] <= or4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla0|fa:fa0
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla0|fa:fa1
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla0|fa:fa2
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla0|fa:fa3
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN2
+sum[0] <= fa:fa0.sum
+sum[1] <= fa:fa1.sum
+sum[2] <= fa:fa2.sum
+sum[3] <= fa:fa3.sum
+g[0] <= g[0].DB_MAX_OUTPUT_PORT_TYPE
+g[1] <= g[1].DB_MAX_OUTPUT_PORT_TYPE
+g[2] <= g[2].DB_MAX_OUTPUT_PORT_TYPE
+g[3] <= g[3].DB_MAX_OUTPUT_PORT_TYPE
+p[0] <= p[0].DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= p[1].DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= p[2].DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= p[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= buf_cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla1|cll_4bit:cll
+g[0] => and2.IN0
+g[0] => or1.IN1
+g[1] => and3.IN0
+g[1] => or2.IN2
+g[2] => and4.IN0
+g[2] => or3.IN3
+g[3] => or4.IN3
+p[0] => and1.IN0
+p[1] => and2.IN1
+p[1] => and5.IN1
+p[2] => and3.IN1
+p[2] => and6.IN1
+p[2] => and8.IN1
+p[3] => and4.IN1
+p[3] => and7.IN1
+p[3] => and9.IN1
+cin => and1.IN1
+cout[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+cout[1] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+cout[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+cout[3] <= or4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla1|fa:fa0
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla1|fa:fa1
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla1|fa:fa2
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla1|cla_4bit:cla1|fa:fa3
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2
+sum[0] <= cla_4bit:cla0.sum
+sum[1] <= cla_4bit:cla0.sum
+sum[2] <= cla_4bit:cla0.sum
+sum[3] <= cla_4bit:cla0.sum
+sum[4] <= cla_4bit:cla1.sum
+sum[5] <= cla_4bit:cla1.sum
+sum[6] <= cla_4bit:cla1.sum
+sum[7] <= cla_4bit:cla1.sum
+cout <= cla_4bit:cla1.cout
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+cin => cin.IN1
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN2
+sum[0] <= fa:fa0.sum
+sum[1] <= fa:fa1.sum
+sum[2] <= fa:fa2.sum
+sum[3] <= fa:fa3.sum
+g[0] <= g[0].DB_MAX_OUTPUT_PORT_TYPE
+g[1] <= g[1].DB_MAX_OUTPUT_PORT_TYPE
+g[2] <= g[2].DB_MAX_OUTPUT_PORT_TYPE
+g[3] <= g[3].DB_MAX_OUTPUT_PORT_TYPE
+p[0] <= p[0].DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= p[1].DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= p[2].DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= p[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= buf_cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla0|cll_4bit:cll
+g[0] => and2.IN0
+g[0] => or1.IN1
+g[1] => and3.IN0
+g[1] => or2.IN2
+g[2] => and4.IN0
+g[2] => or3.IN3
+g[3] => or4.IN3
+p[0] => and1.IN0
+p[1] => and2.IN1
+p[1] => and5.IN1
+p[2] => and3.IN1
+p[2] => and6.IN1
+p[2] => and8.IN1
+p[3] => and4.IN1
+p[3] => and7.IN1
+p[3] => and9.IN1
+cin => and1.IN1
+cout[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+cout[1] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+cout[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+cout[3] <= or4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla0|fa:fa0
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla0|fa:fa1
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla0|fa:fa2
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla0|fa:fa3
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN2
+sum[0] <= fa:fa0.sum
+sum[1] <= fa:fa1.sum
+sum[2] <= fa:fa2.sum
+sum[3] <= fa:fa3.sum
+g[0] <= g[0].DB_MAX_OUTPUT_PORT_TYPE
+g[1] <= g[1].DB_MAX_OUTPUT_PORT_TYPE
+g[2] <= g[2].DB_MAX_OUTPUT_PORT_TYPE
+g[3] <= g[3].DB_MAX_OUTPUT_PORT_TYPE
+p[0] <= p[0].DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= p[1].DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= p[2].DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= p[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= buf_cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla1|cll_4bit:cll
+g[0] => and2.IN0
+g[0] => or1.IN1
+g[1] => and3.IN0
+g[1] => or2.IN2
+g[2] => and4.IN0
+g[2] => or3.IN3
+g[3] => or4.IN3
+p[0] => and1.IN0
+p[1] => and2.IN1
+p[1] => and5.IN1
+p[2] => and3.IN1
+p[2] => and6.IN1
+p[2] => and8.IN1
+p[3] => and4.IN1
+p[3] => and7.IN1
+p[3] => and9.IN1
+cin => and1.IN1
+cout[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+cout[1] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+cout[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+cout[3] <= or4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla1|fa:fa0
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla1|fa:fa1
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla1|fa:fa2
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla2|cla_4bit:cla1|fa:fa3
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3
+sum[0] <= cla_4bit:cla0.sum
+sum[1] <= cla_4bit:cla0.sum
+sum[2] <= cla_4bit:cla0.sum
+sum[3] <= cla_4bit:cla0.sum
+sum[4] <= cla_4bit:cla1.sum
+sum[5] <= cla_4bit:cla1.sum
+sum[6] <= cla_4bit:cla1.sum
+sum[7] <= cla_4bit:cla1.sum
+cout <= cla_4bit:cla1.cout
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+cin => cin.IN1
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla0
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN2
+sum[0] <= fa:fa0.sum
+sum[1] <= fa:fa1.sum
+sum[2] <= fa:fa2.sum
+sum[3] <= fa:fa3.sum
+g[0] <= g[0].DB_MAX_OUTPUT_PORT_TYPE
+g[1] <= g[1].DB_MAX_OUTPUT_PORT_TYPE
+g[2] <= g[2].DB_MAX_OUTPUT_PORT_TYPE
+g[3] <= g[3].DB_MAX_OUTPUT_PORT_TYPE
+p[0] <= p[0].DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= p[1].DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= p[2].DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= p[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= buf_cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla0|cll_4bit:cll
+g[0] => and2.IN0
+g[0] => or1.IN1
+g[1] => and3.IN0
+g[1] => or2.IN2
+g[2] => and4.IN0
+g[2] => or3.IN3
+g[3] => or4.IN3
+p[0] => and1.IN0
+p[1] => and2.IN1
+p[1] => and5.IN1
+p[2] => and3.IN1
+p[2] => and6.IN1
+p[2] => and8.IN1
+p[3] => and4.IN1
+p[3] => and7.IN1
+p[3] => and9.IN1
+cin => and1.IN1
+cout[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+cout[1] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+cout[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+cout[3] <= or4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla0|fa:fa0
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla0|fa:fa1
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla0|fa:fa2
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla0|fa:fa3
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+cin => cin.IN2
+sum[0] <= fa:fa0.sum
+sum[1] <= fa:fa1.sum
+sum[2] <= fa:fa2.sum
+sum[3] <= fa:fa3.sum
+g[0] <= g[0].DB_MAX_OUTPUT_PORT_TYPE
+g[1] <= g[1].DB_MAX_OUTPUT_PORT_TYPE
+g[2] <= g[2].DB_MAX_OUTPUT_PORT_TYPE
+g[3] <= g[3].DB_MAX_OUTPUT_PORT_TYPE
+p[0] <= p[0].DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= p[1].DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= p[2].DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= p[3].DB_MAX_OUTPUT_PORT_TYPE
+cout <= buf_cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla1|cll_4bit:cll
+g[0] => and2.IN0
+g[0] => or1.IN1
+g[1] => and3.IN0
+g[1] => or2.IN2
+g[2] => and4.IN0
+g[2] => or3.IN3
+g[3] => or4.IN3
+p[0] => and1.IN0
+p[1] => and2.IN1
+p[1] => and5.IN1
+p[2] => and3.IN1
+p[2] => and6.IN1
+p[2] => and8.IN1
+p[3] => and4.IN1
+p[3] => and7.IN1
+p[3] => and9.IN1
+cin => and1.IN1
+cout[0] <= or1.DB_MAX_OUTPUT_PORT_TYPE
+cout[1] <= or2.DB_MAX_OUTPUT_PORT_TYPE
+cout[2] <= or3.DB_MAX_OUTPUT_PORT_TYPE
+cout[3] <= or4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla1|fa:fa0
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla1|fa:fa1
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla1|fa:fa2
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mod|mod_dp:datapath|adder:adder_inst|cla_8bit:cla3|cla_4bit:cla1|fa:fa3
+a => xor1.IN0
+a => and1.IN0
+b => xor1.IN1
+b => and1.IN1
+cin => xor2.IN1
+sum <= xor2.DB_MAX_OUTPUT_PORT_TYPE
+g <= and1.DB_MAX_OUTPUT_PORT_TYPE
+p <= xor1.DB_MAX_OUTPUT_PORT_TYPE
+
+

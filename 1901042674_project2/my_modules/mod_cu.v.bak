@@ -1,0 +1,65 @@
+module mod_cu(
+    input clk,
+    input rst,
+    input start,
+    input temp_lt_b, // Input from Datapath indicating TEMP < B
+    output reg [1:0] state, // Current state output
+    output reg load_temp, // Control signal to load A into TEMP
+    output reg subtract, // Control signal to subtract B from TEMP
+    output reg we, // Control signal to write TEMP to RESULT
+    output reg done // Output signal to indicate operation is complete
+);
+
+// Define the states
+localparam [1:0] START = 2'b00,
+                 INIT = 2'b01,
+                 SUBTRACT = 2'b10,
+                 ASSIGN_RESULT = 2'b11;
+
+// State variables
+reg [1:0] next_state;
+
+// State transition logic
+always @(posedge clk or posedge rst) begin
+    if (rst)
+        state <= START;
+    else
+        state <= next_state;
+end
+
+// Next state logic and output logic
+always @(*) begin
+    // Defaults
+    load_temp = 0;
+    subtract = 0;
+    we = 0;
+    done = 0;
+    
+    case (state)
+        START: begin
+            if (start)
+                next_state = INIT;
+            else
+                next_state = START;
+        end
+        INIT: begin
+            load_temp = 1;
+            next_state = SUBTRACT;
+        end
+        SUBTRACT: begin
+            subtract = 1;
+            if (temp_lt_b)
+                next_state = ASSIGN_RESULT;
+            else
+                next_state = SUBTRACT;
+        end
+        ASSIGN_RESULT: begin
+            we = 1;
+            done = 1;
+            next_state = START;
+        end
+        default: next_state = START;
+    endcase
+end
+
+endmodule
