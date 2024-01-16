@@ -10,8 +10,8 @@ wire regWrite, memWrite, memRead, jump, ALUsrc, move,
 wire [2:0] ALUop, alu_ctr;   
 
 wire [31:0] alu_result, shifted_address, sign_ext_imm, instruction;
-reg [31:0] pc;
-wire [31:0] pc_plus_4, jump_pc, shift_pc, branch_pc, final_pc;
+reg [31:0] pc, prev_pc;
+wire [31:0] pc_plus_4, jump_pc, shift_pc, branch_pc, final_pc, next_pc;
 
 initial begin
 	pc = 32'b0;
@@ -51,18 +51,14 @@ control_unit control_unit(
 
 // find write_reg value
 // 5bit 2to1 mux
+
+assign write_reg = (jump == 1'b1 && instruction[31:26] == 6'b111001) ? 5'b11111 : jal_reg;
+
 mux_6_2to1 muxReg(
     .d0(instruction[20:16]), //rt
     .d1(instruction[15:11]), //rd
     .sel(regDst),
     .out(jal_reg)
-);
-
-mux_6_2to1 muxJalReg(
-    .d0(jal_reg), //rt
-    .d1(5'b11111), //rd
-    .sel(jump),
-    .out(write_reg)
 );
 
 // Calling Register module to read/write data from/to registers according to instruction type and control signals
@@ -126,21 +122,16 @@ mux_32_2to1 muxMem(
     .out(wire_write_data)
 );
 
-wire [31:0] jal_write_data;
+wire [31:0] move_write_data;
 // mux to select data to write in register
-mux_32_2to1 muxJal(
-    .d0(wire_write_data),
-    .d1(pc_plus_4),
-    .sel(jump),
-    .out(jal_write_data)
-);
-
 mux_32_2to1 muxMove(
-    .d0(jal_write_data),
+    .d0(wire_write_data),
     .d1(read_data1),
     .sel(move),
-    .out(write_data)
+    .out(move_write_data)
 );
+
+assign write_data = (jump == 1'b1 && instruction[31:26] == 6'b111001) ? prev_pc : move_write_data;
 
 // Calling shift_left_2 module to shift immediate value
 shift_left_2 sl(
@@ -158,22 +149,32 @@ adder adder2(
     .cout(cout2)
 );
 
-wire branch_and1;
+// Calling branch module to check if branch is taken or not
+wire beq, bne, negate_zero_bit, beq_or_bne;
+not not1(negate_zero_bit, zero_bit);
 
-and and1(
-    branch_and1, branch, zero_bit
-);
+assign beq = (branch == 1'b1 && instruction[31:26] == 6'b100011) ? branch & zero_bit : 1'b0;
+assign bne = (branch == 1'b1 && instruction[31:26] == 6'b100111) ? branch & negate_zero_bit : 1'b0;
 
+or or1(beq_or_bne, beq, bne);
+
+// mux to select branch_pc or shift_pc
 mux_32_2to1 muxBranch(
     .d0(pc_plus_4),
     .d1(shift_pc),
-    .sel(branch_and1),
+    .sel(beq_or_bne),
     .out(branch_pc)
 ); 
 
 // concatenate pc_plus_4[31:28] with instruction[25:0] and 2'b0
-assign jump_pc = {pc_plus_4[31:28], instruction[25:0], 2'b0};
+//assign jump_pc = {pc_plus_4[31:28], instruction[25:0], 2'b0};
+concat concat1(
+    .jump_pc(jump_pc),
+    .pc_plus_4(pc_plus_4[31:28]),
+    .instruction(instruction[25:0])
+);
 
+// mux to select final pc
 mux_32_2to1 muxJump(
     .d0(branch_pc),
     .d1(jump_pc), 
@@ -181,8 +182,20 @@ mux_32_2to1 muxJump(
     .out(final_pc) 
 ); 
 
+// JR instruction implementation
+wire jr, regWriteCheck;
+assign jr = (instruction[5:0] == 6'b001000 && instruction[31:26] == 6'b000000) ? 1'b1 : 1'b0;
+//regWrite is 0 for jr instruction
+not a(regWrite, jr); 
+assign next_pc = (jr == 1'b1 && instruction[5:0] == 6'b001000 && instruction[31:26] == 6'b000000) ? read_data1 : final_pc;
+
+// Calling PC module to get next pc
 always @(posedge clock) begin
-    pc <= final_pc; 
+    // Assign pc_plus_4 to prev_pc when a jump instruction is detected
+    if (jump == 1'b1 && instruction[31:26] == 6'b111001) begin
+        prev_pc <= pc_plus_4;
+    end
+    pc <= next_pc; 
 end
 
 endmodule
