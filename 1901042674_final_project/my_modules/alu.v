@@ -82,14 +82,12 @@ mux_32_8to1 mux0 (
   .aluop(alu_ctr)
 );
 
-wire [31:0] zero_bit_wire;
-// Comparator to check if sub_res is zero
-nor_operation nor_zero(
-  .a(32'b0),
-  .b(sub_res),
-  .res(zero_bit_wire)
+
+zero_bit_module zero_bit_inst(
+  .zero_bit(zero_bit),
+  .sub_res(sub_res)
 );
 
-buf buf_zero_bit(zero_bit, zero_bit_wire[0]);
+// buf buf_zero_bit(zero_bit, zero_bit_wire[0]);
 
 endmodule

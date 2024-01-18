@@ -18,7 +18,7 @@ module mips_tb();
     initial begin
         #2;
         
-        #40 $finish;
+        #800 $finish;
     end
 
     always @(posedge clock) begin
