@@ -1,5 +1,0 @@
-module cla_8bit(
-	output [7:0] sum, P, G,
-	input [7:0] a, b,
-	input cin
-);
